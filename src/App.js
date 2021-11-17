@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { GlobalStyles } from "./components/GlobalStyles";
+import { TextGlow, TextGradient } from "./components/uikit/Text";
+import {
+  Button,
+  PrimaryButton,
+  TransparentButton,
+  GradientBorderButton,
+  GradientBackground,
+} from "./components/uikit/Button";
+import { Card, BgCard } from "./components/uikit/Card";
+function App({ children }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TextGlow>Un estilo unico con efecto</TextGlow>
+      <TextGradient>Un solo texto con gradiente</TextGradient>
+      <TextGlow>
+        {" "}
+        <TextGradient> Texto Gradientre con mezcal </TextGradient> Con solo glow
+        efectto
+      </TextGlow>
+      <GlobalStyles />
+      <Button glow>boton normal</Button>
+      <PrimaryButton glow>Boton primario</PrimaryButton>
+      <TransparentButton glow>boton transparente</TransparentButton>
+      <GradientBackground glow>Con gradiente</GradientBackground>
+      <GradientBorderButton glow>Boton con gradiente</GradientBorderButton>
+      <Card>Una card simple</Card>
+      <BgCard>Una Crad con gradiente</BgCard>
+      ...
+      {children}
+    </>
   );
 }
 

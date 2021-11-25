@@ -31,63 +31,62 @@ export const Footerbody = styled.div`
 `;
 export const FooterNavigation = styled.nav`
   box-sizing: border-box;
-  ul {
+`;
+export const FirstLinks = styled.ul`
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  @media screen and (min-width: 749px) {
+    -webkit-column-gap: 32px;
+    column-gap: 32px;
+  }
+  @media screen and (min-width: 641px) {
+    -webkit-column-gap: 24px;
+    column-gap: 24px;
+    margin-bottom: 0.8rem;
+  }
+  /*   media querie (min-width:749px) -webkit-column-gap: 32px;
+column-gap: 32px; */
+  /* media querie de (min:width: 641px) -webkit-column-gap: 24px;
+column-gap: 24px; */
+  li {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-column-gap: 16px;
-    column-gap: 16px;
-    row-gap: 16px;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    @media screen and (min-width: 749px) {
-      -webkit-column-gap: 32px;
-      column-gap: 32px;
-    }
-    @media screen and (min-width: 641px) {
-      -webkit-column-gap: 24px;
-      column-gap: 24px;
-      margin-bottom: 0.8rem;
-    }
-    /*   media querie (min-width:749px) -webkit-column-gap: 32px;
-column-gap: 32px; */
-    /* media querie de (min:width: 641px) -webkit-column-gap: 24px;
-column-gap: 24px; */
-    li {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      a {
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        color: white;
-        opacity: 0.88;
-        -webkit-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease;
-        @media screen and (min-width: 641px) {
-          font-size: 1rem;
-          line-height: 1.5rem;
-        }
-        /* media querie from min-width(641px) font-size: 1rem;
-line-height: 1.5rem; */
+    a {
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      color: white;
+      opacity: 0.88;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      @media screen and (min-width: 641px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
       }
+      /* media querie from min-width(641px) font-size: 1rem;
+line-height: 1.5rem; */
     }
   }
 `;
-
 export const SecondListNav = styled.ul`
   display: -webkit-box;
   display: -webkit-flex;
@@ -121,32 +120,28 @@ export const SecondListNav = styled.ul`
     }
 
 */
-  li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    a {
-      -webkit-text-decoration: none;
-      text-decoration: none;
-      font-size: 0.75rem;
-      line-height: 1rem;
-      color: white;
-      opacity: 0.48;
-      -webkit-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease;
-      @media screen and (min-width: 641px) {
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        &:hover {
-          opacity: 0.88;
-        }
+`;
+
+export const SeconLinks = styled.li`
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  a {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: white;
+    opacity: 0.48;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    @media screen and (min-width: 641px) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      &:hover {
+        opacity: 0.88;
       }
-      /* media queries 
- (min-width: 641)
- font-size: 0.875rem;
-line-height: 1.25rem; 
- */
     }
   }
 `;

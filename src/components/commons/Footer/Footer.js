@@ -3,8 +3,10 @@ import {
   FooterNavigation,
   Footerbody,
   Footer,
+  FirstLinks,
   SecondListNav,
   SocialMediaIcons,
+  SeconLinks,
 } from "./footer_styles";
 
 const FooterMain = () => {
@@ -13,7 +15,7 @@ const FooterMain = () => {
       <Footer>
         <Footerbody>
           <FooterNavigation>
-            <ul>
+            <FirstLinks>
               <li>
                 <a href="www">Graph</a>
               </li>
@@ -29,31 +31,32 @@ const FooterMain = () => {
               <li>
                 <a href="www">Jobs</a>
               </li>
-            </ul>
+            </FirstLinks>
             <SecondListNav>
-              <li>
+              <SeconLinks>
                 <a href="www">IronHack</a>
-              </li>
-              <li>
+              </SeconLinks>
+              <SeconLinks>
                 <a href="www">Courses</a>
-              </li>
-              <li>
+              </SeconLinks>
+              <SeconLinks>
                 <a href="www">Forum</a>
-              </li>
-              <li>
+              </SeconLinks>
+              <SeconLinks>
                 <a href="www">Test</a>
-              </li>
-              <li>
+              </SeconLinks>
+              <SeconLinks>
                 <a href="www">Partnerships</a>
-              </li>
-              <li>
+              </SeconLinks>
+              <SeconLinks>
                 <a href="www">Privacy</a>
-              </li>
-              <li>
+              </SeconLinks>
+              <SeconLinks>
                 <a href="www">Terms of use</a>
-              </li>
+              </SeconLinks>
             </SecondListNav>
           </FooterNavigation>
+
           <SocialMediaIcons>
             <li>
               <a href="www">

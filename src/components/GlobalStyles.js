@@ -23,4 +23,11 @@ padding: 0;
 list-style: none;
   }
  };
+ .container-main-card{
+  display: flex;
+justify-content: center;
+padding:2em;
+
+ 
+ }
 `;

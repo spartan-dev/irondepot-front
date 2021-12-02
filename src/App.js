@@ -1,10 +1,14 @@
 import { GlobalStyles } from "./components/GlobalStyles";
 import Rutas from "./routes";
+import Layout from "./components/Layout";
 function App({ children }) {
   return (
     <>
       <GlobalStyles />
-      <Rutas />
+      <Layout>
+        <Rutas />
+      </Layout>
+
       {/* <TextGlow>Un estilo unico con efecto</TextGlow>
       <TextGradient>Un solo texto con gradiente</TextGradient>
       <TextGlow>

@@ -18,6 +18,7 @@ export const Card = styled.div`
 export const BgCard = styled(Card)`
   overflow: hidden;
   background-color: transparent;
+  transition: all 0.5s;
   &:before {
     content: "";
     background-image: var(--bg-image);
@@ -27,5 +28,10 @@ export const BgCard = styled(Card)`
     position: absolute;
     filter: blur(30px);
     z-index: -1;
+  }
+  &:hover {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    padding: 2em;
   }
 `;

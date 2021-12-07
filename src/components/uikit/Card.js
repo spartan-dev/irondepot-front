@@ -11,8 +11,21 @@ export const Card = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: gray;
+  background-color: ${(props) => (props.transBack ? "transparent" : "gray")};
+  box-shadow: ${(props) =>
+    props.transBack
+      ? "8px 8px 8px rgba(0, 0, 0, 0.40)"
+      : "0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%)"};
+
   border-radius: 10px;
+  &:before {
+    padding: 1rem;
+  }
+  &:hover {
+    box-shadow: 0 0 80px rgb(192 219 255 / 35%), 0 0 32px rgb(65 120 255 / 24%); /* 0 8px 8px rgba(0, 0, 0, 0.25); */
+    margin: 10px;
+    padding: 2rem;
+  }
 `;
 
 export const BgCard = styled(Card)`

@@ -25,9 +25,22 @@ list-style: none;
  };
  .container-main-card{
   display: flex;
+  justify-content: center;
+  padding:2em;
+ }
+ .card-team{
+  display: flex;
 justify-content: center;
-padding:2em;
-
- 
+align-items: center;
+flex-grow: 1;
+height: inherit;
+width: inherit;
+/* width: 100%;
+height: 100%; */
+ }
+ .card-low-text-container{
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
  }
 `;

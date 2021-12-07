@@ -5,6 +5,7 @@ export const TextGlow = styled.h1`
 `;
 
 export const TextGradient = styled.span`
+  font-size: ${(props) => (props.large ? "2.5em" : "1.5em")};
   background: linear-gradient(to right, #30cfd0, #c43ad6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

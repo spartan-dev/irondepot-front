@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   z-index: 20;
-  position: absolute;
+  /*   position: absolute;
+ */
   left: 0px;
   right: 0px;
   bottom: 0px;

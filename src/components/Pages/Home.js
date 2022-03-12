@@ -20,11 +20,11 @@ const Home = () => {
       <div className="container-main-card">
         <Link to="/mexicopart_time" style={{ textDecoration: "none" }}>
           {" "}
-          <BgCard>Mexico Part Time</BgCard>
+          <BgCard transBack>Mexico Part Time</BgCard>
         </Link>
         <Link to="/mexicofull_time" style={{ textDecoration: "none" }}>
           {" "}
-          <BgCard>Mexico Full Time</BgCard>{" "}
+          <BgCard transBack>Mexico Full Time</BgCard>{" "}
         </Link>
       </div>
     </div>

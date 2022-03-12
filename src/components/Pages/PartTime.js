@@ -1,13 +1,14 @@
 import { TextGlow, TextGradient } from "../uikit/Text";
+import { Link } from "react-router-dom";
 import { BgCard, Card } from "../uikit/Card";
 import { CardContainer } from "../uikit/Containers";
 const proyects = [
-  { id: 1, name: "Web Dev FT", date: "October 2018 " },
-  { id: 2, name: "Web Dev FT", date: "Novembver 2017 " },
-  { id: 3, name: "Web Dev FT", date: "April 2018 " },
-  { id: 4, name: "Web Dev FT", date: "September 2019 " },
-  { id: 5, name: "Web Dev FT", date: "January 2020 " },
-  { id: 6, name: "Web Dev FT", date: "July 2021 " },
+  { id: "1", name: "Web Dev FT", date: "October 2018 " },
+  { id: "2", name: "Web Dev FT", date: "Novembver 2017 " },
+  { id: "3", name: "Web Dev FT", date: "April 2018 " },
+  { id: "4", name: "Web Dev FT", date: "September 2019 " },
+  { id: "5", name: "Web Dev FT", date: "January 2020 " },
+  { id: "6", name: "Web Dev FT", date: "July 2021 " },
 ];
 
 /* 
@@ -34,21 +35,26 @@ const PartTime = () => {
       <CardContainer>
         {proyects.map((item) => {
           return (
-            <Card transBack key={item.id}>
-              <div style={{ height: "90%", width: "inherit" }}>
-                <div className="card-team">
-                  <img
-                    src="https://res.cloudinary.com/diurivj/image/upload/v1548777591/Cohorts/wdptjul18.jpg"
-                    alt="ironhackers"
-                    style={{ height: "inherit", width: "inherit" }}
-                  />
+            <Link
+              to={`/classmodules/${item.id}`}
+              style={{ textDecoration: "none" }}
+            >
+              <Card transBack key={item.id}>
+                <div style={{ height: "90%", width: "inherit" }}>
+                  <div className="card-team">
+                    <img
+                      src="https://res.cloudinary.com/diurivj/image/upload/v1548777591/Cohorts/wdptjul18.jpg"
+                      alt="ironhackers"
+                      style={{ height: "inherit", width: "inherit" }}
+                    />
+                  </div>
+                  <div className="card-low-text-container">
+                    <TextGradient>{item.name}</TextGradient>
+                    <TextGlow>{item.date}</TextGlow>
+                  </div>
                 </div>
-                <div className="card-low-text-container">
-                  <TextGradient>{item.name}</TextGradient>
-                  <TextGlow>{item.date}</TextGlow>
-                </div>
-              </div>
-            </Card>
+              </Card>
+            </Link>
           );
         })}
       </CardContainer>

@@ -101,7 +101,7 @@ export const NavLinks = styled.div`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  a {
+  span {
     color: #ffffffe0;
     border-bottom: 1px solid;
     border-bottom-color: currentcolor;

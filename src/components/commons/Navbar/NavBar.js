@@ -9,7 +9,7 @@ import {
   NavGridLinks,
   NavLinks,
 } from "./navbar_styles";
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <Header>
@@ -17,19 +17,21 @@ const NavBar = () => {
         <NavContainer>
           <Brand>
             <NavWrapper>
-              <a href="www" style={{ marginRight: "1.5em" }}>
+              <Link to="/" style={{ marginRight: "1.5em" }}>
                 <img
                   width={80}
                   heigth={80}
                   src="https://building.co/wp-content/uploads/2017/01/ironhack-logo.png"
                   alt="ironhack logo"
                 />
-              </a>
+              </Link>
               <Nav>
                 <NavInside>
                   <NavGridLinks>
                     <NavLinks>
-                      <a href="www">Home</a>
+                      <Link to="/" style={{ textDecoration: "none" }}>
+                        <span>Home</span>
+                      </Link>
                     </NavLinks>
                     <NavLinks>
                       <a href="www">Runs</a>

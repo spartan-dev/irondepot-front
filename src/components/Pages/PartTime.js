@@ -1,6 +1,6 @@
 import { TextGlow, TextGradient } from "../uikit/Text";
 import { Link } from "react-router-dom";
-import { BgCard, Card } from "../uikit/Card";
+import { Card } from "../uikit/Card";
 import { CardContainer } from "../uikit/Containers";
 const proyects = [
   { id: "1", name: "Web Dev FT", date: "October 2018 " },
